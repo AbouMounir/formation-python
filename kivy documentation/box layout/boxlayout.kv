@@ -1,0 +1,22 @@
+# Position hints are partially working, depending on the orientation:
+#   If the orientation is vertical: x, right and center_x will be used.
+#   If the orientation is horizontal: y, top and center_y will be used.
+
+
+# self.texture_size
+
+
+BoxLayoutExemple:
+
+<BoxLayoutExemple>:
+    orientation: 'vertical'
+    spacing: 10
+    Button:
+        text: 'this on top'
+    Button:
+        text: 'this left aligned'
+        size_hint_x: None
+        size_x: 1
+        pos_hint: {'right': .5}
+    Button:
+        text: 'this on bottom'

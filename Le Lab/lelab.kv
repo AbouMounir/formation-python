@@ -1,0 +1,35 @@
+#: import layout_exemples layout_exemples
+#: import widget_exemples widget_exemples
+#: import navigation_screen_manager navigation_screen_manager
+#: import boxlayout_with_action_bar boxlayout_with_action_bar
+
+
+<MyScreenManager>:
+    Screen:
+        name : "screen1"
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                text: "ImagesExemple"
+                on_press: root.push("ImagesExemple")
+            Button:
+                text: "WidgetsExemple"
+                on_press: root.push("WidgetsExemple")
+            Button:
+                text: "LayoutExempleTabs"
+                on_press: root.push("LayoutExempleTabs")
+    Screen:
+        name: "ImagesExemple"
+        BoxLayoutWithActionBar:
+            title: "images"
+            ImagesExemple:
+    Screen:
+        name: "WidgetsExemple"
+        BoxLayoutWithActionBar:
+            title: "widgets"
+            WidgetsExemple:
+    Screen:
+        name: "LayoutExempleTabs"
+        BoxLayoutWithActionBar:
+            title: "PageLayout"
+            LayoutExempleTabs:
